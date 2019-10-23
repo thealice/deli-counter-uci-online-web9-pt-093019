@@ -2,8 +2,8 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   elsif array.length > 0
-    array.map.with_index {|name, index| "#{index+1}. #{name}" }
-    puts "The line is currently: #{array.join(" ")}"
+    new_array = array.map.with_index {|name, index| "#{index+1}. #{name}" }
+    puts "The line is currently: #{new_array.join(" ")}"
   end
 end
 
