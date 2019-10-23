@@ -8,7 +8,7 @@ def line(array)
 end
 
 def take_a_number(katz_deli, name)
-  katz_deli << "#{name}"
+  katz_deli << name
   number = katz_deli.index("#{name}")+1
   puts "Welcome, #{katz_deli.last}. You are number #{number} in line."
 end
